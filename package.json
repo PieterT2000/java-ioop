@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "nodemon -e java,json --watch ./lab2 --watch package.json --exec 'javac -sourcepath ./lab2 -d ./bin lab2/*.java; java -cp ./bin CardAccount'"
+  },
+  "nodemonConfig": {
+    "quiet": true
+  }
+}
