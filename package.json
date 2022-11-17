@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "start": "nodemon -e java,json --watch ./lab2 --watch package.json --exec 'javac -sourcepath ./lab2 -d ./bin lab2/*.java; java -cp ./bin CardAccount'"
+    "watch": "nodemon -e java,json --watch ./lab7_8 --watch package.json --exec 'yarn run start'",
+    "start": "find ./lab7_8 -type f -name \"*.java\" > sources.txt && javac -sourcepath ./lab7_8 -d ./bin @sources.txt; java -cp ./bin gui.GameWindow",
+    "build": "zip -r ~/Downloads/lab7_8_submission.zip ./lab7_8/src/gui -x \"*.txt\" -x \"*.DS_Store\""
   },
   "nodemonConfig": {
     "quiet": true

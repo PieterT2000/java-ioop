@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class CardAccount {
+class CardAccount_2 {
   int[] accountNumber;
   double balance;
   String accountHolderName;
@@ -20,7 +20,7 @@ class CardAccount {
   // System.out.println(account.checkName("p d tuijl"));
   // }
 
-  CardAccount(int[] number, String name) {
+  CardAccount_2(int[] number, String name) {
     this.accountHolderName = name;
     this.setAccountNumber(number);
   }
